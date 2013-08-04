@@ -1,0 +1,33 @@
+.cel-chart {
+	margin: 10px;
+	padding: 12px;
+	background: lightgray;
+}
+
+.save-block {
+	margin: 6px;
+	margin-left: 20px;
+	border: 1px dashed dimgray;
+	padding: 6px;
+}
+
+.notice {
+	padding: 4px;
+	margin: 4px;
+	border: 1px solid blue;
+	background: aqua;
+}
+
+.warning {
+	padding: 4px;
+	margin: 4px;
+	border: 1px solid orange;
+	background: yellow;
+}
+
+.duplicate-block {
+	margin: 6px;
+	margin-left: 20px;
+	border: 1px solid black;
+	padding: 6px;
+}

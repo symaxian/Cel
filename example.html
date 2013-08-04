@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cel Example</title>
+		<script type='text/javascript' src='cel.js'></script>
+		<link rel='stylesheet' href='cel.css'>
+	</head>
+	<body>
+		<center>
+			<canvas id='myCanvas'></canvas>
+		</center>
+		<script type='text/javascript'>
+			var myCanvas = document.getElementById('myCanvas');
+			var myContext = Cel.wrap(myCanvas.getContext('2d'));
+
+			myContext.fillStyle = 'yellow';
+			myContext.rect(0, 0, 300, 150);
+			myContext.fill();
+
+			myContext.save();
+
+			myContext.translate(60, 60);
+			myContext.scale(1, 1);
+			myContext.rotate(0);
+
+			myContext.fillStyle = 'black';
+			myContext.font = '30px serif';
+			myContext.fillText('Hi!', 10, 30);
+
+			myContext.lineWidth = 1;
+			myContext.strokeStyle = 'blue';
+			myContext.rect(0, 0, 60, 40);
+			myContext.stroke();
+
+			myContext.restore();
+
+			document.body.appendChild(myContext.exportHTML());
+		</script>
+	</body>
+</html>
